@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let opcion;
+
+        while (true) {
+            opcion = prompt("1. Hamburguesa \n" + "2. Perro \n" + "3. Pizza \n" + "4. Malteada \n");
+
+            if (opcion > 0 && opcion < 5) {
+
+                menuComida(opcion);
+                break; 
+
+            } else {
+
+                alert("Opción no reconocida");
+                opcion = prompt("1. Hamburguesa \n" + "2. Perro \n" + "3. Pizza \n" + "4. Malteada \n");
+                menuComida(opcion);
+                break; 
+
+            }
+        }
+
+        function menuComida(opcion) {
+            switch (opcion) {
+
+                case '1':
+                    alert("Usted ha elegido Hamburguesa y tiene un costo de $20.000 COL");
+                    break;
+
+                case '2':
+
+                    alert("Usted ha elegido Perro y tiene un costo de $15.000 COL");
+                    break;
+
+                case '3':
+
+                    alert("Usted ha elegido Pizza y tiene un costo de $25.000 COL");
+                    break;
+
+                case '4':
+
+                    alert("Usted ha elegido Malteada y tiene un costo de $18.000 COL");
+                    break;
+
+            }
+        }
+
+// CAMBIO DE NOMBRE DEL ARCHIVO REALIZADO
+
+    </script>
+</body>
+</html>
